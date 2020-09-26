@@ -1,30 +1,40 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+body {
+    background-color: lightsalmon;
+}
+
+.numsearch {
+    margin-bottom: 5px;
+    float: left;
+}
+
+.namesearch{
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 500px;
+    float: left;
+}
+
 .content {
     background-color: lightgray;
     border-style: solid;
+    margin-top: 10px;
     margin-bottom: 25px;
+    max-width: 300px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    margin-right: 20px;
+    float: left;
 }
-
-form.example input[type=text] {
-    padding: 10px;
-    margin-bottom: 10 px;
-    font-size: 12px;
-    border: 1px solid grey;
-    float: left;
-    width: 20%;
-    background: #f1f1f1;
-  }
-  
-  /* Style the submit button */
-  form.example button {
-    float: left;
-    width: 8%;
-    padding: 10px;
-    margin-left: 5 px;
-    padding-top: 5 px;
-    background: #2196F3;
-    color: white;
-    font-size: 12px;
-    border: 1px solid grey;
-    border-left: none; /* Prevent double borders */
-    cursor: pointer;
-  }

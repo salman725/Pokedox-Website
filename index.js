@@ -36,6 +36,7 @@ nameSearch.addEventListener('keyup', (e) => {
     if (e.keyCode == 13){
         matches = "";
     const searchName = e.target.value;
+    if (searchName >= 'a' && searchName <= 'z' && searchName.length < 20|| searchName >= 'A' && searchName <= 'Z' && searchName.length < 20){
     const filteredPokemon = pokemons.filter((pokemon) => {
         return (
             pokemon.name.includes(searchName.toUpperCase()) || 
@@ -50,5 +51,8 @@ nameSearch.addEventListener('keyup', (e) => {
     }
     alert(matches);
     }
+    else
+    alert("PLEASE ENTER A VALID CHARACTER");
+}
 });
 
