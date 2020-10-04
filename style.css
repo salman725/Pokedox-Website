@@ -38,3 +38,13 @@ body {
     margin-right: 20px;
     float: left;
 }
+
+.blockdiv{
+    background-color:lightgreen;
+    margin-top: 70 px;
+
+}
+
+.pokemonListResults {
+    list-style: none;
+}
