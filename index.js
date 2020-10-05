@@ -72,8 +72,9 @@ nameSearch.addEventListener('keyup', (e) => {
     deleteDiv.remove();
     }
     const searchName = e.target.value;
-    if (searchName >= 'a' && searchName <= 'z' && searchName.length < 20|| searchName >= 'A' && searchName <= 'Z' && searchName.length < 20){
-    const filteredPokemon = pokemons.filter((pokemon) => {
+    if (searchName >= 'a' && searchName <= 'z' && searchName.length < 20 || searchName >= 'A' && searchName <= 'Z' && searchName.length < 20 || searchName.length == 0){
+    if (searchName.length > 0){
+        const filteredPokemon = pokemons.filter((pokemon) => {
         return (
             pokemon.name.includes(searchName.toUpperCase()) || 
             pokemon.name.includes(searchName)
@@ -112,10 +113,8 @@ nameSearch.addEventListener('keyup', (e) => {
         let e = document.getElementById('myUl')
         e.appendChild(li);
     }
-    
+}
     }
-
-    if (key)
 
     else
     alert("PLEASE ENTER A VALID CHARACTER");
