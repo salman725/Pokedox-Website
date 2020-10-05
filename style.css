@@ -35,6 +35,7 @@ b {
 .content {
     background-color: lightgray;
     border-style: solid;
+    border-radius: 25px;
     margin-top: 10px;
     margin-left: -10px;
     margin-bottom: 25px;
@@ -58,7 +59,7 @@ b {
 
 .pokemonListResults {
     list-style: none;
-    background-color: lightskyblue;
+    background-color: greeb;
     min-width: 900px;
 }
 
@@ -72,6 +73,7 @@ ul li {
     float: left;
     max-width: 300px;
     border-style: solid;
+    border-radius: 25px;
   }
 
   li {
