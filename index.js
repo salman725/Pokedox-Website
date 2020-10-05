@@ -32,9 +32,9 @@ numSearch.addEventListener('keyup', (e) => {
     let blockDiv = document.createElement('div');
     blockDiv.id = "blockdiv";
     blockDiv.className = "blockdiv";
-    let ulElement = document.createElement('ul');
-    ulElement.id = "myUl";
-    blockDiv.appendChild(ulElement);
+    let ulList = document.createElement('ul');
+    ulList.id = "secondsearch";
+    blockDiv.appendChild(ulList);
     const currentDiv = document.getElementById('oldPokemon');
     document.body.insertBefore(blockDiv, currentDiv);
 
@@ -52,7 +52,7 @@ numSearch.addEventListener('keyup', (e) => {
         li.appendChild(h3);
         li.appendChild(p);
 
-        let e = document.getElementById('myUl')
+        let e = document.getElementById('secondsearch')
         e.appendChild(li);
     }
     }
@@ -90,9 +90,9 @@ nameSearch.addEventListener('keyup', (e) => {
     let blockDiv = document.createElement('div');
     blockDiv.id = "blockdiv";
     blockDiv.className = "blockdiv";
-    let ulElement = document.createElement('ul');
-    ulElement.id = "myUl";
-    blockDiv.appendChild(ulElement);
+    let ulList = document.createElement('ul');
+    ulList.id = "secondsearch";
+    blockDiv.appendChild(ulList);
     const currentDiv = document.getElementById('oldPokemon');
     document.body.insertBefore(blockDiv, currentDiv);
 
@@ -110,7 +110,7 @@ nameSearch.addEventListener('keyup', (e) => {
         li.appendChild(h3);
         li.appendChild(p);
 
-        let e = document.getElementById('myUl')
+        let e = document.getElementById('secondsearch')
         e.appendChild(li);
     }
 }
