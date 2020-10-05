@@ -22,7 +22,7 @@ body {
 .namesearch{
     margin-bottom: 5px;
     margin-left: 10px;
-    margin-right: 500px;
+    margin-right: 700px;
     float: left;
 }
 
@@ -30,6 +30,7 @@ body {
     background-color: lightgray;
     border-style: solid;
     margin-top: 10px;
+    margin-left: -10px;
     margin-bottom: 25px;
     max-width: 300px;
     padding-left: 15px;
@@ -39,12 +40,34 @@ body {
     float: left;
 }
 
+.oldPokemon{
+    margin: 20px;
+    background: green;
+}
+
 .blockdiv{
-    background-color:lightgreen;
-    margin-top: 70 px;
+    background-color:lightblue;
 
 }
 
 .pokemonListResults {
     list-style: none;
+    background-color: green;
+    min-width: 900px;
 }
+
+ul li {
+    background: green;
+    margin: 25px;
+    margin-left: -10px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    float: left;
+    max-width: 300px;
+    border-style: solid;
+  }
+
+  li{
+      max-width: 300px;
+  }

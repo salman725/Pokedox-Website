@@ -35,7 +35,8 @@ numSearch.addEventListener('keyup', (e) => {
     let ulElement = document.createElement('ul');
     ulElement.id = "myUl";
     blockDiv.appendChild(ulElement);
-    document.body.insertBefore(blockDiv, document.getElementById("list"));
+    const currentDiv = document.getElementById('oldPokemon');
+    document.body.insertBefore(blockDiv, currentDiv);
 
     for (var j = 0; j < filteredPokemon.length; j++){
         let li = document.createElement('li');
