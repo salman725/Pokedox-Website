@@ -60,7 +60,7 @@ numSearch.addEventListener('keyup', (e) => {
     alert("ENTER A NUMBER BETWEEN 1 - 20!");
     }
 
-    if (searchNum > "a"){
+    if (searchNum >= "a"){
     alert("ENTER A NUMBER BETWEEN 1 - 20!"); 
     }
 });
@@ -113,11 +113,14 @@ nameSearch.addEventListener('keyup', (e) => {
         e.appendChild(li);
     }
     
-    if (searchName > 0){
-        alert("ENTER A CHARACTER BETWEEN A-Z!");
-        }
     }
 
-});
+    if (key)
+
+    else
+    alert("PLEASE ENTER A VALID CHARACTER");
+}
+
+);
 
 
