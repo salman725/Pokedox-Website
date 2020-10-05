@@ -56,13 +56,21 @@ numSearch.addEventListener('keyup', (e) => {
         e.appendChild(li);
     }
     }
-    else
+    if (searchNum > 20){
     alert("ENTER A NUMBER BETWEEN 1 - 20!");
+    }
+
+    if (searchNum > "a"){
+    alert("ENTER A NUMBER BETWEEN 1 - 20!"); 
+    }
 });
 
 nameSearch.addEventListener('keyup', (e) => {
-    if (e.keyCode == 13){
-        matches = "";
+    matches = "";
+    let deleteDiv = document.getElementById('blockdiv');
+    if (deleteDiv !== null){
+    deleteDiv.remove();
+    }
     const searchName = e.target.value;
     if (searchName >= 'a' && searchName <= 'z' && searchName.length < 20|| searchName >= 'A' && searchName <= 'Z' && searchName.length < 20){
     const filteredPokemon = pokemons.filter((pokemon) => {
@@ -77,11 +85,38 @@ nameSearch.addEventListener('keyup', (e) => {
             break;
         }
     }
-    alert(matches);
+    
+    let blockDiv = document.createElement('div');
+    blockDiv.id = "blockdiv";
+    blockDiv.className = "blockdiv";
+    let ulElement = document.createElement('ul');
+    ulElement.id = "myUl";
+    blockDiv.appendChild(ulElement);
+    const currentDiv = document.getElementById('oldPokemon');
+    document.body.insertBefore(blockDiv, currentDiv);
+
+    for (var j = 0; j < filteredPokemon.length; j++){
+        let li = document.createElement('li');
+        li.className = "pokemonListResults";
+        let image = document.createElement('img');
+        image.src = filteredPokemon[j].img;
+        let h3 = document.createElement('h3');
+        h3.appendChild(document.createTextNode(filteredPokemon[j].num + ". " + filteredPokemon[j].name))
+        let p = document.createElement('p');
+        p.appendChild(document.createTextNode("Type: " + filteredPokemon[j].type))
+
+        li.appendChild(image);
+        li.appendChild(h3);
+        li.appendChild(p);
+
+        let e = document.getElementById('myUl')
+        e.appendChild(li);
     }
-    else
-    alert("PLEASE ENTER A VALID CHARACTER");
-}
+    
+    if (searchName > 0){
+        alert("ENTER A CHARACTER BETWEEN A-Z!");
+        }
+    }
 
 });
 
